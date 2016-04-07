@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Football Coach Personal Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/font-awesome.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+</head>
+<body>
+	
+		<div class="container">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-header main-header">
+					<div class="main-logo"></div>
+				</div>
+			</div>
+			<div class="bs-component tab-custom inside-nav">
+		        <ul class="nav nav-tabs col-sm-12">
+			        <li class="active"><a href="#home-field" data-toggle="tab">Scheme</a></li>
+			        <li><a href="#home-profile" data-toggle="tab">Team</a></li>
+			        <li><a a href="#home-gal" data-toggle="tab">Gallery</a></li>
+		        </ul>
+	            <div id="myTabContent" class="tab-content">
+		            <div class="tab-pane fade active in" id="home-field">
+		            	<div class="content row">
+							<div class="col-sm-6">
+							    <div class="panel panel-primary">
+								    <div class="panel-heading">
+								    	
+								    </div>
+								    <div class="panel-body">
+										<div class="player-profile"></div>
+										<div class="players-list" ondrop="dropToTheList(event)" ondragover="allowDrop(event)">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="panel panel-primary field-panel">
+								    <div class="panel-heading">
+								    
+								    </div>
+								    <div class="panel-body">
+								        <div class="scheme-control">
+								            <div class="scheme-lablel">Please select scheme</div>
+											<select id="scheme-selector" class="form-control input-sm">
+												<option value="1">4-4-2</option>
+												<option value="2">4-3-3</option>
+												<option value="3">3-4-3</option>			
+											</select>
+										</div>
+										<div class="field">
+											<div class ="forward-area" field-role="forward" ondrop="dropToTheField(event)" ondragover="allowDrop(event)"></div>
+											<div class ="midfielder-area" field-role="midfielder" ondrop="dropToTheField(event)" ondragover="allowDrop(event)"></div>
+											<div class ="defender-area" field-role="defender" ondrop="dropToTheField(event)" ondragover="allowDrop(event)"></div>
+											<div class ="goalkeeper-area" field-role="goalkeeper" ondrop="dropToTheField(event)" ondragover="allowDrop(event)"></div>
+										</div>
+									</div>
+				                </div>
+							</div>
+						</div>
+		            </div>
+		            <div class="tab-pane fade" id="home-profile">
+		            	<div class="content row">
+							<div class="col-sm-12">
+								<div id="myCarousel" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								     <li data-target="#myCarousel" data-slide-to="1"></li>
+								     <li data-target="#myCarousel" data-slide-to="2"></li>
+								     <li data-target="#myCarousel" data-slide-to="3"></li>
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner" role="listbox">
+									    <div class="item active">
+									      <img src="assets/img/graphics/slide.jpg" alt="Chania">
+									    </div>
+
+									    <div class="item">
+									      <img src="assets/img/graphics/slide2.jpg" alt="Chania">
+									    </div>
+
+									    <div class="item">
+									      <img src="assets/img/graphics/slide4.jpg" alt="Flower">
+									    </div>
+
+									    <div class="item">
+									      <img src="assets/img/graphics/slide3.jpg" alt="Flower">
+									    </div>
+								  </div>
+
+								  <!-- Left and right controls -->
+								  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+									    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									    <span class="sr-only">Previous</span>
+								  </a>
+								  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								  	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								  	<span class="sr-only">Next</span>
+								  </a>
+								</div>
+								<table class="table">
+						            <thead>
+						              <tr>
+						                <th>#</th>
+						                <th>Name</th>
+						                <th>Role</th>
+						                <th>Age</th>
+						                <th>Nationality</th>
+						                <th>Goals</th>
+						              </tr>
+						            </thead>
+						            <tbody>
+						              <tr>
+						                <td>1</td>
+						                <td>Oleksandr Shovkovsky</td>
+						                <td>G</td>
+						                <td>41</td>
+						                <td>Ukraine</td>
+						                <td>-</td>
+						              </tr>
+						              <tr>
+						                <td>5</td>
+						                <td>Vitorino Antunes</td>
+						                <td>D</td>
+						                <td>28</td>
+						                <td>Portugal</td>
+						                <td>2</td>
+						              </tr>
+						              <tr>
+						                <td>24</td>
+						                <td>Domagoj Vida</td>
+						                <td>D</td>
+						                <td>28</td>
+						                <td>Croatia</td>
+						                <td>1</td>
+						              </tr>
+						              <tr>
+						                <td>9</td>
+						                <td>Mykola Moroziuk</td>
+						                <td>D</td>
+						                <td>28</td>
+						                <td>Ukraine</td>
+						                <td>-</td>
+						              </tr>
+						              <tr>
+						                <td>34</td>
+						                <td>Yevhen Khacheridi</td>
+						                <td>D</td>
+						                <td>28</td>
+						                <td>Ukraine</td>
+						                <td>2</td>
+						              </tr>
+						              <tr>
+						                <td>4</td>
+						                <td>Miguel Veloso</td>
+						                <td>M</td>
+						                <td>29</td>
+						                <td>Portugal</td>
+						                <td>4</td>
+						              </tr>
+						              <tr>
+						                <td>17</td>
+						                <td>Serhiy Rybalka</td>
+						                <td>M</td>
+						                <td>25</td>
+						                <td>Ukraine</td>
+						                <td>-</td>
+						              </tr>
+						              <tr>
+						                <td>25</td>
+						                <td>Derlis González</td>
+						                <td>M</td>
+						                <td>21</td>
+						                <td>Paraguay</td>
+						                <td>3</td>
+						              </tr>
+						              <tr>
+						                <td>32</td>
+						                <td>Valery Fedorchuk</td>
+						                <td>M</td>
+						                <td>25</td>
+						                <td>Ukraine</td>
+						                <td>-</td>
+						              </tr>
+						              <tr>
+						                <td>10</td>
+						                <td>Andriy Yarmolenko</td>
+						                <td>F</td>
+						                <td>26</td>
+						                <td>Ukraine</td>
+						                <td>13</td>
+						              </tr> 
+						              <tr>
+						                <td>91</td>
+						                <td>Lukasz Teodorczyk</td>
+						                <td>F</td>
+						                <td>24</td>
+						                <td>Poland</td>
+						                <td>4</td>
+						              </tr>     
+						            </tbody>
+						        </table>
+						    </div>
+						 </div>	 
+		            </div>
+		            <div class="tab-pane fade" id="home-gal">
+		            	 <div class="row">
+
+				            <div>
+				                <h3 class="page-header">Gallery</h3>
+				            </div>
+
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal1.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal2.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal3.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal4.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal5.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal6.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal7.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal8.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal9.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal10.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal11.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				                <a class="thumbnail" href="#">
+				                    <img class="img-responsive" src="assets/img/gallery/gal12.jpg" alt="">
+				                </a>
+				            </div>
+       					 </div>
+
+		            	
+		            </div>
+	            </div>
+	        </div>
+		</div>
+		
+		<footer class="footer-distributed">
+	        <div class="footer-left">
+	        	<h3><span class="main-logo-footer"></span></h3>
+	        	<p class="footer-links">
+					<a href="#">Home</a>·
+					<a href="#">Blog</a>·
+					<a href="#">Pricing</a>·
+					<a href="#">About</a>·
+					<a href="#">Faq</a>·
+					<a href="#">Contact</a>
+				</p>
+				<p class="footer-company-name">Dynamo Kyiv &copy; 2016</p>
+			</div>
+	        <div class="footer-center">
+	        	<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Velyka Vasylkivska str., 55</span> Kyiv, Ukraine</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+38 044 590 67 51</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">info@nsc-olimpiyskiy.com.ua </a></p>
+				</div>
+			</div>
+            <div class="footer-right">
+				<p class="footer-company-about">
+					<span>Media</span>
+					Pursuing the aim of providing mass media with maximum optimum working conditions, the FC Dynamo Kyiv press office.
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Modal Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Some text in the modal.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+	
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

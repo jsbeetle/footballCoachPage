@@ -1,0 +1,293 @@
+.table tr:hover {
+  background-color: #d9edf7;
+}
+.table > thead > tr:hover {
+  background-color: white;
+}
+.panel-primary .panel-heading {
+  background-image: none;
+  background-color: #2780e3;
+  border-radius: 0;
+}
+.panel {
+  border-radius: 0;
+}
+.tooltip > .tooltip-inner {
+  background-color: #2780e3;
+}
+.tooltip-arrow {
+  color: #2780e3;
+}
+.inside-nav {
+  margin-top: 70px;
+}
+.container {
+  max-width: 800px;
+}
+.header {
+  margin-top: 50px;
+  max-width: 800px;
+}
+.main-header {
+  text-align: center;
+  float: inherit;
+}
+.content {
+  margin-top: 10px;
+}
+.navbar-inverse {
+  background-color: #2780e3;
+  border-color: #1967be;
+  background-image: none;
+}
+.nav-tabs {
+  margin-bottom: 10px;
+}
+.main-logo {
+  background: url("../img/graphics/logo_sm.png");
+  height: 69px;
+  width: 47px;
+  display: inline-block;
+  position: absolute;
+}
+.main-logo-footer {
+  background: url("../img/graphics/logo_sm.png");
+  height: 69px;
+  width: 47px;
+  display: inline-block;
+}
+.text-logo {
+  background: url("../img/graphics/logo-text.png");
+  height: 69px;
+  width: 439px;
+  display: inline-block;
+}
+.field {
+  height: 600px;
+  background: url("../img/graphics/field.jpg");
+  background-size: cover;
+  margin-top: -50px;
+}
+.player-profile {
+  background-color: white;
+  border: 1px solid #2780e3;
+  overflow: auto;
+}
+.player-profile img {
+  display: inline-block;
+  float: left;
+}
+.profile-description {
+  display: block;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.profile-number,
+.profile-role,
+.profile-nationality,
+.profile-age {
+  color: #b4b4b4;
+  font-size: 12pt;
+}
+.profile-name {
+  text-align: left;
+  background-color: #2780e3;
+  color: white;
+  font-weight: bold;
+}
+.profile-close {
+  background-image: url("../img/graphics/close_button.gif");
+  width: 17px;
+  height: 17px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+.profile-data {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.scheme-control {
+  padding-bottom: 10px;
+}
+.scheme-lablel {
+  display: inline-block;
+  color: #2780e3;
+}
+#scheme-selector {
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.players-list {
+  height: 640px;
+  background-color: #b4b4b4;
+  border: 1px solid #b4b4b4;
+  overflow: auto;
+}
+.players-list .player-entry {
+  background-color: white;
+  height: 60px;
+  margin-bottom: 1px;
+}
+.players-list .player-entry:hover {
+  background-color: #d9edf7;
+}
+.players-list .player-entry img {
+  height: 50px;
+  width: 45px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.players-list .player-number {
+  color: #2780e3;
+  float: right;
+  font-size: 18pt;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.players-list .player-role {
+  float: right;
+  color: #b4b4b4;
+  font-size: 10pt;
+  margin-right: 5px;
+}
+.players-list .player-info {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  margin-top: 4px;
+  height: 50px;
+}
+.players-list .player-name {
+  color: #b4b4b4;
+  font-size: 12pt;
+}
+.players-list .player-nationality {
+  color: #b4b4b4;
+  font-size: 10pt;
+  display: inline-block;
+  float: left;
+}
+.players-list .player-fieldrole {
+  float: right;
+  color: #b4b4b4;
+}
+.field .player-entry {
+  height: 100px;
+  width: 90px;
+  text-align: center;
+  margin-top: 1px;
+  display: inline-block;
+}
+.field .player-entry img {
+  height: 50px;
+  width: 45px;
+  margin-top: 5px;
+}
+.field .player-name {
+  color: white;
+  font-weight: bold;
+}
+.field .player-number {
+  display: none;
+}
+.field .player-nationality {
+  display: none;
+}
+.field .player-fieldrole {
+  display: none;
+}
+.left-logo {
+  width: 84px;
+  height: 64px;
+  background-image: url("../img/graphics/leftLogo.png");
+  margin-top: -19px;
+}
+.controls {
+  max-width: 800px;
+}
+.field-keeper {
+  height: 100px;
+  width: 90px;
+  background-color: black;
+}
+.forward-area,
+.midfielder-area,
+.defender-area,
+.goalkeeper-area {
+  height: 120px;
+  text-align: center;
+  margin-top: 50px;
+}
+.goalkeeper-area {
+  margin-top: 40px;
+}
+.modal-body p {
+  white-space: pre-wrap;
+}
+.footer-links {
+  display: none;
+}
+.footer-center i {
+  display: none;
+}
+.footer-company-about {
+  display: none;
+}
+@media (min-width: 768px) {
+  .field .player-name {
+    display: none;
+  }
+  .field .player-entry {
+    width: 70px;
+  }
+  .footer-links {
+    display: inline-block;
+  }
+  .footer-center i {
+    display: inline-block;
+  }
+  .footer-company-about {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .field .player-name {
+    display: none;
+  }
+  .field .player-entry {
+    width: 70px;
+  }
+  .footer-links {
+    display: inline-block;
+  }
+  .footer-center i {
+    display: inline-block;
+  }
+  .footer-company-about {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .field-panel {
+    width: 500px;
+  }
+  .field .player-name {
+    display: inline-block;
+  }
+  .field .player-entry {
+    width: 90px;
+  }
+  .footer-links {
+    display: inline-block;
+  }
+  .footer-center i {
+    display: inline-block;
+  }
+  .footer-company-about {
+    display: inline-block;
+  }
+}
